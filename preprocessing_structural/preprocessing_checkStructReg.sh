@@ -1,7 +1,8 @@
 #!/bin/bash
 
 dataFolder="/data_remote/ABIDE/data"
-checksFolder="/data/pzhutovsky/deep-embedding/preprocessing_structural/checks_registration" 
+currentDirectory=`pwd`
+checksFolder="${currentDirectory}/checks_registration" 
 
 for subjFolder in ${dataFolder}/subject_*; do
 	echo ${subjFolder}
